@@ -1,7 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FM Talk Foot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 50px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #64748b;
+            font-weight: 400;
+        }
+        
+        .demo-section {
+            margin: 50px 0;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 16px;
+            text-align: center;
+        }
+        
+        .demo-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
+        
+        .audio-player {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pipeline {
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .pipeline-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #1e293b;
+        }
+        
+        .flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.95rem;
+        }
+        
+        .step {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        
+        .arrow {
+            color: #64748b;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .tech-category {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 16px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .tech-category h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1e293b;
+        }
+        
+        .tech-list {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+        
+        .highlight {
+            margin: 40px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            border-radius: 16px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+        }
+        
+        .highlight h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1e293b;
+        }
+        
+        .highlight p {
+            color: #64748b;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 15px;
+            }
+            
+            .card {
+                padding: 30px 25px;
+            }
+            
+            .title {
+                font-size: 2.2rem;
+            }
+            
+            .flow {
+                flex-direction: column;
+            }
+            
+            .arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1 class="title">FM Talk Foot</h1>
+                <p class="subtitle">Football Manager → Podcast automatique</p>
+            </div>
+            
+            <div class="demo-section">
+                <h2 class="demo-title">Écoutez le résultat</h2>
+                <div class="audio-player">
+                    <audio controls style="width: 100%;">
+                        <source src="demo1.mp3" type="audio/mpeg">
+                        Votre navigateur ne supporte pas l'audio.
+                    </audio>
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">Match serré 2-1</p>
+                </div>
+                <div class="audio-player">
+                    <audio controls style="width: 100%;">
+                        <source src="demo2.mp3" type="audio/mpeg">
+                        Votre navigateur ne supporte pas l'audio.
+                    </audio>
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">Victoire 4-0</p>
+                </div>
+            </div>
+            
+            <div class="pipeline">
+                <h2 class="pipeline-title">Comment ça marche</h2>
+                <div class="flow">
+                    <div class="step">Données FM</div>
+                    <div class="arrow">→</div>
+                    <div class="step">Analyse & Scoring</div>
+                    <div class="arrow">→</div>
+                    <div class="step">Débat IA</div>
+                    <div class="arrow">→</div>
+                    <div class="step">Synthèse vocale</div>
+                    <div class="arrow">→</div>
+                    <div class="step">Podcast MP3</div>
+                </div>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>Interface & Backend</h3>
+                    <div class="tech-list">
+                        PySide6<br>
+                        FastAPI<br>
+                        Pandas
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Intelligence Artificielle</h3>
+                    <div class="tech-list">
+                        Transformers<br>
+                        Qwen 1.7B - 12B<br>
+                        QLora fine-tuning
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Audio & Données</h3>
+                    <div class="tech-list">
+                        Coqui TTS + XTTS v2<br>
+                        Whisper + Pyannote<br>
+                        Dataset personnalisé
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight">
+                <h3>Le défi technique</h3>
+                <p>Transformer 6 fichiers HTML de statistiques en débat audio naturel entre 4 intervenants aux personnalités distinctes. Scoring contextuel intelligent : un but à la 89e minute pour égaliser n'a pas le même poids qu'un 4e but.</p>
+            </div>
+            
+            <div class="highlight">
+                <h3>Innovation</h3>
+                <p>Dataset créé en transcrivant de vraies émissions foot avec séparation automatique des locuteurs. Résultat : des débats cohérents qui sonnent authentique.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
