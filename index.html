@@ -195,18 +195,22 @@
                 <h2 class="demo-title">Écoutez le résultat</h2>
                 <div class="audio-player">
                     <audio controls style="width: 100%;">
-                        <source src="demo1.mp3" type="audio/mpeg">
+                        <source src="v1.wav" type="audio/wav">
                         Votre navigateur ne supporte pas l'audio.
                     </audio>
-                    <p style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">Match serré 2-1</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">Extrait venant de la version 0.1, match PSG 6 - 1 ASSE</p>
                 </div>
                 <div class="audio-player">
                     <audio controls style="width: 100%;">
-                        <source src="demo2.mp3" type="audio/mpeg">
+                        <source src="v2.wav" type="audio/wav">
                         Votre navigateur ne supporte pas l'audio.
                     </audio>
-                    <p style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">Victoire 4-0</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">Extrait venant de la version 0.2, match PSG 0 - 1 OM (joueur entraine l'OM : G.Caperon)</p>
                 </div>
+            </div>
+
+            <div class="highlight">
+                <p>FM Talk Foot est un générateur de podcast à partir de matchs du jeu Football Manager 2024. En plus de proposer une expérience inédite aux joueurs en ancrant leurs exploits dans le réel, le logiciel est totallement gratuit et sans pub. Sa particularité étant d'utiliser la puissance de calcul du pc de l'utilisateur pour générer le débat textuel et audio. Doté d'une interface accessible, il permet à tous les joueurs de garder un souvenir de leurs exploits !</p>
             </div>
             
             <div class="pipeline">
@@ -216,51 +220,80 @@
                     <div class="arrow">→</div>
                     <div class="step">Analyse & Scoring</div>
                     <div class="arrow">→</div>
-                    <div class="step">Débat IA</div>
+                    <div class="step">Débat généré par IA</div>
                     <div class="arrow">→</div>
                     <div class="step">Synthèse vocale</div>
                     <div class="arrow">→</div>
-                    <div class="step">Podcast MP3</div>
+                    <div class="step">Podcast</div>
                 </div>
+            </div>
+            
+
+            <div class="highlight">
+                <h3>Le défi technique</h3>
+                <p></p>
+            </div>
+            
+            <div class="highlight">
+                <h3>Innovation</h3>
+                <p>Dataset créé en transcrivant de vraies émissions foot avec séparation automatique des locuteurs. Résultat : un modèle LLM personnalisé pour des débats cohérents qui sonnent authentique.</p>
+            </div>
+            
+            <div class="highlight">
+                <h3>Architecture standalone</h3>
+                <p>Application desktop autonome combinant PySide6 et FastAPI local. </p>
+            </div>
+            
+            <div class="highlight">
+                <h3>Optimisation intelligente</h3>
+                <p>Pipeline hybride : fine-tuning QLora avec Transformers, puis inference ultra-rapide via llama.cpp. Détection hardware automatique pour sélectionner le modèle GGUF optimal (Q4/Q8). Qwen-12B Q4 : seulement 4GB RAM, 3x plus rapide que Transformers.</p>
             </div>
             
             <div class="tech-grid">
                 <div class="tech-category">
                     <h3>Interface & Backend</h3>
                     <div class="tech-list">
-                        PySide6<br>
-                        FastAPI<br>
-                        Pandas
+                        PySide6 (app desktop)<br>
+                        FastAPI (backend local)<br>
+                        Architecture standalone<br>
                     </div>
                 </div>
                 
                 <div class="tech-category">
                     <h3>Intelligence Artificielle</h3>
                     <div class="tech-list">
-                        Transformers<br>
-                        Qwen 1.7B - 12B<br>
-                        QLora fine-tuning
+                        Transformers (QLora training)<br>
+                        llama.cpp (inference)<br>
+                        Modèles Qwen 1.7B - 14B en GGUF maison<br>
                     </div>
                 </div>
                 
                 <div class="tech-category">
                     <h3>Audio & Données</h3>
                     <div class="tech-list">
-                        Coqui TTS + XTTS v2<br>
-                        Whisper + Pyannote<br>
-                        Dataset personnalisé
+                        Coqui TTS + XTTS v2 / Yourtts<br>
+                        Whisper + Pyannote (dataset personnalisé)<br>
+                        Pandas, Numpy, BeautifulSoup4
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Optimisation & Config</h3>
+                    <div class="tech-list">
+                        psutil (CPU/RAM)<br>
+                        GPUtil (GPU NVIDIA)<br>
+                        Sélection modèle auto
                     </div>
                 </div>
             </div>
-            
-            <div class="highlight">
-                <h3>Le défi technique</h3>
-                <p>Transformer 6 fichiers HTML de statistiques en débat audio naturel entre 4 intervenants aux personnalités distinctes. Scoring contextuel intelligent : un but à la 89e minute pour égaliser n'a pas le même poids qu'un 4e but.</p>
+        </div>
+        
+        <div class="card" style="margin-top: 30px;">
+            <div class="header">
+                <h2 class="pipeline-title">Interface de la version 0.2</h2>
             </div>
-            
-            <div class="highlight">
-                <h3>Innovation</h3>
-                <p>Dataset créé en transcrivant de vraies émissions foot avec séparation automatique des locuteurs. Résultat : des débats cohérents qui sonnent authentique.</p>
+            <div style="text-align: center;">
+                <img src="5.png" alt="Interface FM Talk Foot v0.2" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
             </div>
         </div>
     </div>
