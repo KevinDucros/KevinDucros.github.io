@@ -3,297 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FM Talk Foot</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: #2d3748;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-        
-        .card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            border-radius: 24px;
-            padding: 50px;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        
-        .title {
-            font-size: 2.8rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 15px;
-        }
-        
-        .subtitle {
-            font-size: 1.3rem;
-            color: #64748b;
-            font-weight: 400;
-        }
-        
-        .demo-section {
-            margin: 50px 0;
-            padding: 30px;
-            background: #f8fafc;
-            border-radius: 16px;
-            text-align: center;
-        }
-        
-        .demo-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: #1e293b;
-        }
-        
-        .audio-player {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            margin: 15px 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        
-        .pipeline {
-            margin: 40px 0;
-            text-align: center;
-        }
-        
-        .pipeline-title {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-bottom: 25px;
-            color: #1e293b;
-        }
-        
-        .flow {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            font-size: 0.95rem;
-        }
-        
-        .step {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            padding: 12px 20px;
-            border-radius: 25px;
-            font-weight: 500;
-            white-space: nowrap;
-        }
-        
-        .arrow {
-            color: #64748b;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-        
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-        
-        .tech-category {
-            background: #f8fafc;
-            padding: 25px;
-            border-radius: 16px;
-            border-left: 4px solid #667eea;
-        }
-        
-        .tech-category h3 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: #1e293b;
-        }
-        
-        .tech-list {
-            color: #64748b;
-            font-size: 0.95rem;
-            line-height: 1.8;
-        }
-        
-        .highlight {
-            margin: 40px 0;
-            padding: 25px;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
-            border-radius: 16px;
-            border: 1px solid rgba(102, 126, 234, 0.2);
-        }
-        
-        .highlight h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: #1e293b;
-        }
-        
-        .highlight p {
-            color: #64748b;
-            font-size: 1rem;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 30px 15px;
-            }
-            
-            .card {
-                padding: 30px 25px;
-            }
-            
-            .title {
-                font-size: 2.2rem;
-            }
-            
-            .flow {
-                flex-direction: column;
-            }
-            
-            .arrow {
-                transform: rotate(90deg);
-            }
-        }
-    </style>
+    <title>Kevin Ducros - Développeur Python</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav class="nav-header">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="fmtalkfoot.html">FM Talk Foot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="card">
             <div class="header">
-                <h1 class="title">FM Talk Foot</h1>
-                <p class="subtitle">Football Manager → Podcast automatique</p>
-            </div>
-            
-            <div class="demo-section">
-                <h2 class="demo-title">Écoutez le résultat</h2>
-                <div class="audio-player">
-                    <audio controls style="width: 100%;">
-                        <source src="v1.wav" type="audio/wav">
-                        Votre navigateur ne supporte pas l'audio.
-                    </audio>
-                    <p style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">Extrait venant de la version 0.1, match PSG 6 - 1 ASSE</p>
-                </div>
-                <div class="audio-player">
-                    <audio controls style="width: 100%;">
-                        <source src="v2.wav" type="audio/wav">
-                        Votre navigateur ne supporte pas l'audio.
-                    </audio>
-                    <p style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">Extrait venant de la version 0.2, match PSG 0 - 1 OM (joueur entraine l'OM : G.Caperon)</p>
-                </div>
+                <h1 class="title">Kevin Ducros</h1>
+                <p class="subtitle">Développeur Python</p>
             </div>
 
-            <div class="highlight">
-                <p>FM Talk Foot est un générateur de podcast à partir de matchs du jeu Football Manager 2024. En plus de proposer une expérience inédite aux joueurs en ancrant leurs matchs favoris dans le réel, le logiciel est totallement gratuit et sans pub. Sa particularité étant d'utiliser la puissance de calcul du pc de l'utilisateur pour générer le débat textuel et audio. Doté d'une interface accessible, il permet à tous les joueurs de garder un souvenir de leurs exploits !</p>
-            </div>
-            
-            <div class="pipeline">
-                <h2 class="pipeline-title">Comment ça marche</h2>
-                <div class="flow">
-                    <div class="step">Données FM</div>
-                    <div class="arrow">→</div>
-                    <div class="step">Analyse & Scoring</div>
-                    <div class="arrow">→</div>
-                    <div class="step">Débat généré par IA</div>
-                    <div class="arrow">→</div>
-                    <div class="step">Synthèse vocale</div>
-                    <div class="arrow">→</div>
-                    <div class="step">Podcast</div>
+            <div class="section">
+                <div class="section-content">
+                    <p>Bonjour, je suis Kevin DUCROS, développeur en reconversion avec une passion pour l'intelligence artificielle, le langage naturel… et le football.</p>
+                    
+                    <p>Après plusieurs années d'expérience dans d'autres secteurs, je me suis lancé à fond dans le développement Python. Mon projet principal ? <a href="fmtalkfoot.html">FM Talk Foot</a>, une IA qui transforme des matchs de Football Manager en débats audio comme à la radio.</p>
+                    
+                    <p>Sur ce site, vous trouverez :</p>
+                    <ul>
+                        <li>mon <a href="cv.html">CV</a> (parcours, compétences techniques, projets)</li>
+                        <li>une présentation détaillée de <a href="fmtalkfoot.html">FM Talk Foot</a></li>
+                    </ul>
+                    
+                    <p><b>Je suis actuellement à la recherche d'une alternance en développement Python / IA pour octobre 2025.</b></p>
+                    <p>Bonne visite !</p>
                 </div>
-            </div>
-            
-
-            <div class="highlight">
-                <h3>Le défi technique</h3>
-                <p>Le projet est découpable en 4 briques principales : L'extraction des données, la préparation du dataset, la génération du débat textuel et la synthèse vocale. Chacune de ces briques représente un défi technique différent. Si elles ont de commun l'utilisation du langage Python, elles mobilisent des librairies et outils variés permettant d'aborder une grande variété de problématiques.</p>
-            </div>
-            
-            <div class="highlight">
-                <h3>Innovation</h3>
-                <p>Dataset pour fine-tuning léger (QLoRA) créé en transcrivant des dizaines d'heures de vraies émissions foot avec séparation automatique des locuteurs. Résultat : un modèle LLM personnalisé pour des débats cohérents qui sonnent authentique.</p>
-            </div>
-            
-            <div class="highlight">
-                <h3>Architecture standalone</h3>
-                <p>Application desktop autonome combinant PySide6 et FastAPI local. Le choix d'utiliser un LLM et une synthèse vocale local permet de garantir un fonctionnement totalement autonome et gratuit. En utilisant des services (API) extérieurs tels que chatgpt et elevenlabs, la facture dépasserait 20 centimes pour chaque génération de podcast !</p>
-            </div>
-            
-            <div class="highlight">
-                <h3>Optimisation intelligente</h3>
-                <p>Détection hardware automatique pour sélectionner le modèle GGUF maison optimal (1.7B/8B - Q4/Q6). Cela permet à un maximum de joueurs de profiter de l'expérience sans avoir à se soucier de la configuration de leur machine tout en bénéficiant d'un modèle performant. Le plus petit modèle fonctionne par exemple sans carte graphique dédiée, uniquement via le processeur !</p>
-            </div>
-            
-            <div class="tech-grid">
-                <div class="tech-category">
-                    <h3>Interface & Backend</h3>
-                    <div class="tech-list">
-                        PySide6 (app desktop)<br>
-                        FastAPI (backend local)<br>
-                        Architecture standalone<br>
-                    </div>
-                </div>
-                
-                <div class="tech-category">
-                    <h3>Intelligence Artificielle</h3>
-                    <div class="tech-list">
-                        Transformers (QLora training)<br>
-                        llama.cpp (inference)<br>
-                        Modèles Qwen 1.7B - 14B en GGUF maison<br>
-                    </div>
-                </div>
-                
-                <div class="tech-category">
-                    <h3>Audio & Données</h3>
-                    <div class="tech-list">
-                        Coqui TTS + XTTS v2 / Yourtts<br>
-                        Whisper + Pyannote (dataset personnalisé)<br>
-                        Pandas, Numpy, BeautifulSoup4
-                    </div>
-                </div>
-                
-                <div class="tech-category">
-                    <h3>Optimisation & Config</h3>
-                    <div class="tech-list">
-                        Psutil (CPU/RAM)<br>
-                        GPUtil (GPU NVIDIA)<br>
-                        Sélection modèle auto
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card" style="margin-top: 30px;">
-            <div class="header">
-                <h2 class="pipeline-title">Interface de la version 0.2</h2>
-            </div>
-            <div style="text-align: center;">
-                <img src="5.png" alt="Interface FM Talk Foot v0.2" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
             </div>
         </div>
     </div>

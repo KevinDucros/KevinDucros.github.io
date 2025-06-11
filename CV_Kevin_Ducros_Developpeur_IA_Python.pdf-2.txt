@@ -1,0 +1,173 @@
+KEVIN DUCROS
+Développeur Python spécialisé en Data / Intégrateur de solutions IA
+En recherche d’alternance (professionnalisation) 16 mois - dès sept. 2025
++33 6 77 76 31 19
+https://github.com/KevinDucros
+
+kevin.ducros@gmail.com
+https://www.linkedin.com/in/kevinducros/
+
+Ivry-sur-Seine
+Permis B
+
+PROFIL
+
+COMPÉTENCES
+
+Formé au traitement et à l’analyse de données dans un cadre
+appliqué, je maîtrise l’ensemble de la chaîne : de la collecte à
+l’exploration, jusqu’à la restitution adaptée aux usages.
+Attaché à la clarté, à la rigueur et à l’impact métier, je conçois
+également des solutions permettant d’aller plus loin grâce à
+l’automatisation ou à l’intégration raisonnée d’intelligence
+artificielle. Mon objectif : contribuer à des projets où la donnée
+devient un levier opérationnel et une source d’innovation.
+
+Langages & requêtes : Python, SQL, HTML/CSS,
+JavaScript, R
+
+PROJET PRINCIPAL
+
+Environnements & outils : Dataiku, FastAPI,
+GitHub, Jupyter, Google Colab, Anaconda,
+Cursor, n8n, Azure, Databrick
+
+Générateur de débats audio «FM TalkFoot»
+
+2025
+
+Développement d'un logiciel local simulant des émissions de
+débats sur des matchs de Football Manager
+Stack : Python, Pandas, PySide6, FastAPI, Qwen3-1.7B
+(QLora), Whisper, Coqui TTS, XTTS v2
+
+Traitement & analyse de données : Pandas,
+Numpy, JSON, CSV, Excel, Matplotlib, Seaborn
+Visualisation & reporting : Power BI, Google
+Sheets
+
+IA & machine learning : Transformers, QLora,
+RAG, Whisper, Scikit-learn
+Veille & IA générative : ChatGPT, Deepseek,
+Llama, Perplexity, Midjourney, Flux 1
+
+Fonctionnalités :
+• Génération de débats textuels via un LLM local
+• Synthèse vocale réaliste avec 4 intervenants distincts
+• Application optimisée pour CPU, adaptée à des ressources
+locales limitées
+
+Langues : Français (natif), anglais (lecture
+professionnelle, expression fonctionnelle)
+
+AUTRES PROJETS
+
+État : Version beta testée en mai 2025, démo vidéo disponible
+
+LinkedIn Scraper
+
+FORMATION
+
+•
+•
+
+Développeur IA (bac +3)
+
+Distributeur automatique
+
+Ecole IA Microsoft by Simplon
+
+•
+
+•
+•
+•
+
+2025 - 2027 (en cours)
+
+Collecte, stockage et mise à disposition de données
+Intégration de solutions IA (modèles et services)
+Machine Learning via Azure et bibliothèques Python
+
+Master 1 Sociologie
+EHESS
+
+2013
+
+2012
+
+2025
+
+FOSS • Gastronomie • IA • SF • Course à pieds • Football
+
+2021 - 2025 Paris
+Restauration rapide. Création, gestion
+opérationnelle, contenus digitaux (600k
+vues). Note Google : 4,9/5 (200+ avis)
+
+Attaché commercial VEFA
+2020
+
+SOGEPROM & LNC
+•
+
+HTML/CSS
+CENTRES D’INTÉRÊT
+
+EXPÉRIENCES PROFESSIONNELLES
+
+•
+
+JavaScript
+
+OpenClassrooms
+
+Affichage plein écran adapté pour
+personnes âgées, gestion à distance.
+
+le kimbap!
+
+Python for Data Science, AI & Development
+
+OpenClassrooms
+
+•
+
+Fondateur
+
+CERTIFICATIONS
+
+IBM
+
+2023
+Réalisation DIY d’un distributeur
+automatique de croquettes «Crouqsbot».
+Distributions à heures fixes. Basé sur
+Arduino Uno + moteur pas à pas, sans
+interface (piloté par timer).
+
+Calendrier et agenda pour senior 2022
+
+Licence de Sociologie
+UVSQ
+
+2025
+
+Automatiser une collecte de leads
+Script Tampermonkey + Apps Script
+
+2016
+
+2016 - 2021 Paris
+Analyse clients, CRM Immo-lead,
+reporting, gestion multi-programmes
+
+Co-fondateur
+Mon Hanbok
+•
+
+2014 - 2017 Paris
+Prêt-à-porter. Site marchand, tableau de
+bord analytique, stratégie omnicanale
+
+
